@@ -1,0 +1,252 @@
+* {
+    scroll-behavior: smooth;
+    text-size-adjust: 100%;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    /* background-color: #091522; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.nav-bar {
+    display: inline-flex;
+    margin-left: 700px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.logo i {
+    font-size: 50px;
+    margin: 60px 0px 0px 90px;
+    
+}
+
+.nav-bar li {
+    text-decoration: none;
+    list-style-type: none;
+    padding-right: 30px;
+    font-size: 1.2em;
+    
+}
+
+.nav-bar li a {
+    text-decoration: none;
+}
+
+.intro {
+    text-align: justify;
+    margin-left: 190px;
+    font-size: 1.1em;
+    letter-spacing: 1.5px;
+    width: 900px;
+    padding-bottom: 10px;
+    
+}
+
+.intro h1{
+         font-size: 2.2em;
+         animation: name 2s linear 0s infinite alternate-reverse none running;
+         margin-left: -10px;
+         margin-top: 40px;
+         letter-spacing: 9px;
+         text-rendering: geometricPrecision;
+         
+         
+     }
+
+     .intro h1 {
+         margin-top: 78px;
+         padding: 20px;
+     }
+
+     @keyframes name {
+         10% {
+             text-shadow: rgb(255, 105, 180) 3px 0px;
+         }
+
+        
+     }
+
+     .more {
+        padding: 40px 0 0 0;
+     }
+
+     .socials  ul{
+        padding: 40px 0 0 0;
+        display: flex;
+        list-style-type: none;
+     }
+
+     .socials ul li {
+        padding: 0px 30px 0px 0px;
+     }
+
+     .tools {
+        height: 400px;
+        text-align: center;
+     }
+
+     .container {
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+
+
+     }
+
+     .project {
+        background-color: #FAFAFA;
+        padding-top: 60px;
+        margin-top: -60px;
+        
+     }
+
+     .project h1 {
+        font-size: 2.5em;
+        text-align: center;
+        
+     }
+
+     .project-one, .project-two, .project-three, .project-four, .project-five {
+        display: flex;
+        height: 500px;
+        width: 1200px;
+        margin-top: -40px;
+     }
+
+     .text {
+        margin-top: 250px;
+        font-size: 1.2em;
+        margin-left: 150px;
+     }
+     
+     .text h2 {
+        padding-bottom: 30px;
+     }
+
+     .contact {
+       
+        margin-top: 20px;
+        background-color: whitesmoke;
+        height: 900px;
+     }
+
+     .contact h1 {
+        font-size: 2.5em;
+        text-align: center;
+        padding: 50px 0px 50px 0px;
+        
+     }
+
+     .contact p {
+        font-size: 1.4em;
+        padding-bottom: 20px;
+        line-height: 40px;
+        text-align: center;
+        
+     }
+
+     form {
+        background-color: #fff;
+        border: 2px solid transparent;
+        border-radius: 7px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        width: 60%;
+        height: 600px;
+        text-align: left;
+        padding: 60px 0px 0px 60px;
+        font-size: 1.2em;
+     }
+
+
+     form input {
+        padding: 12px;
+        background-color: #F0F0F0;
+        width: 90%;
+        height: 55px;
+        border: 2px solid transparent;
+        font-size: 0.7em;
+     }
+
+     form input:focus, .comment:focus {
+        outline: none;
+     }
+    
+    label {
+        padding-bottom: 20px;
+    }
+     
+    .comment {
+        width: 90%;
+        height: 100px;
+        padding: 10px;
+        background-color: #F0F0F0;
+        border: none;
+    }
+
+    form button {
+        width: 100px;
+    background-color: #6E48E0;
+    padding: 10px;
+    border: 2px solid transparent ;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600px;
+    color: white;
+    }
+
+    .footer-section {
+        display: flex;
+        background-color: #000;
+        color: #fff;
+        height: 400px;
+    }
+
+    .footer-text {
+        width: 700px;
+        padding-top: 100px;
+        line-height: 35px;
+        margin-left: 100px;
+    }
+
+    .footer-text h2, .footer-socials h2 {
+        padding-bottom: 20px;
+        letter-spacing: 2px;
+    }
+
+    .footer-text p{
+        line-height: 25px;
+        font-size: 1.1em;
+    }
+
+    .footer-socials {
+     padding-top: 100px;
+     margin-left: 300px;
+    }
+
+    .footer-socials  ul{
+        display: flex;
+        list-style-type: none;
+     }
+
+     .footer-socials ul li {
+        padding: 0px 30px 0px 0px;
+        font-size: 1.4em;
+     }
+     
+     hr {
+        color: #fff;
+        border: none;
+        border-top: 1px solid #999;
+        background-color: #fff;
+        height: 1px;
+        margin: -110px 0px 0px 65px;
+        width: 90%;
+     }
