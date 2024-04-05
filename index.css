@@ -154,8 +154,11 @@
 
      /*  about me  section Begins*/
      #about {
-        margin-top: 10rem;
+        padding-top: 7rem;
         text-align: center;
+        background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)), url(https://img.freepik.com/premium-photo/kaleidospe-3d-shapes-background_719536-1368.jpg?w=740);
+        height: 100%;
+        width: 100%;
        
      }
 
@@ -185,7 +188,11 @@
      }
 
 
-     
+     .tools-section h2 {
+      font-size: 2.5em;
+        text-align: center;
+        padding: 40px 0px;
+     }
 
      .tools-container {
         display: flex;
@@ -203,13 +210,16 @@
 
      /* tools section ends */
 
-     .project {
+
+     /*Project section begins */
+
+     #project {
         background-color: #FAFAFA;
-        padding-top: 60px;
+        padding-top: 40px;
         
      }
 
-     .project h1 {
+     #project h1 {
         font-size: 2.5em;
         text-align: center;
         
@@ -220,6 +230,18 @@
         height: 500px;
         width: 100%;
         margin-top: -40px;
+     }
+
+     .view {
+      width: 100px;
+    background-color: #6E48E0;
+    padding: 10px;
+    border: 2px solid transparent ;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600px;
+    color: white;
+    margin-top: 2rem;
      }
 
      .text {
