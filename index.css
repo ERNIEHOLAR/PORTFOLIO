@@ -78,15 +78,15 @@
    
 }
 
-.about-me {
+.hero {
    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)), url(https://img.freepik.com/premium-photo/kaleidospe-3d-shapes-background_719536-1368.jpg?w=740);
     height: 100%;
     width: 100%;
-    padding: 250px 0px 50px 190px;
+    padding: 250px 0px 90px 190px;
    
 }
 
-#about {
+#hero-about {
     text-align: center;
     font-size: 1.1em;
     letter-spacing: 1.5px;
@@ -95,7 +95,7 @@
     
 }
 
-#about h1{
+#hero-about h1{
          font-size: 3rem;
          animation: name 2s linear 0s infinite alternate-reverse none running;
          letter-spacing: 9px;
@@ -103,8 +103,8 @@
          
      }
 
-     #about h1 {
-         padding: 20px;
+     #hero-about h1 {
+         padding: 40px;
      }
 
      @keyframes name {
@@ -114,48 +114,94 @@
         
      }
 
-     .more {
-        padding: 40px 0 0 0;
-     }
+   #hero-about p{
+      line-height: 30px;
+   }
 
+   .contact-me {
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem;
+      background-color: #7843E9;
+      color: #fff;
+      text-transform: uppercase;
+      border: transparent;
+      border-radius: 5px;
+      box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15);
+      letter-spacing: 1px;
+      transition: transform .3s;
+      margin-top: 3rem;
+   }
+
+    
      .socials {
       position: absolute;
       color: #6E48E0;
-      top: 50%;
+      top: 45%;
       right: 95%;
+      background-color: #fff;
       font-size: 2rem;
      }
 
      .socials  ul{
-        padding: 40px 0 0 0;
+        padding: 0px 0 60px 0px;
         display: block;
         list-style-type: none;
      }
 
      .socials ul li {
-        padding: 10px 30px 0px 0px;
+        padding: 20px 10px 15px 20px;
      }
 
-     .tools {
-        height: 150px;
+     /*  about me  section Begins*/
+     #about {
+        margin-top: 10rem;
         text-align: center;
        
      }
 
+     .about-details h2 {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+     }
+
+     .about-details p{
+      color: #555;
+      font-size: 1.4rem;
+      line-height: 1.5;
+      letter-spacing: 1.2px;
+     }
+
+     .know-me h2{
+      color: #000;
+      font-size: 2.5rem;
+      padding-bottom: 20px;
+     }
+
+     .know-me {
+      color: #555;
+      font-size: 1.3rem;
+      line-height: 1.5;
+      letter-spacing: 1.2px;
+     }
+
+
+     
 
      .tools-container {
         display: flex;
         justify-content: center;
-        padding: 40px;
+        padding: 2 0px;
         display: flex;
         justify-content: space-evenly;
-        font-size: 2rem;
-
+        font-size: 1.5rem;
+        height: 150px;
      }
 
      .tools-container i {
       color: blue;
      }
+
+     /* tools section ends */
 
      .project {
         background-color: #FAFAFA;
