@@ -8,11 +8,15 @@
     box-sizing: border-box;
 }
 
+
 .header {
+   display: flex;
    position: fixed;
    width: 100%;
+   height: 4.8em;
    background-color: #fff;
    padding: 0 2rem;
+   top: -1px;
 }
 
 .header-logo-container {
@@ -31,6 +35,11 @@
    border-radius: 50%;
 }
 
+.header__logo-sub {
+   letter-spacing: 2px;
+}
+
+
 .home {
     /* background-color: #091522; */
     background-repeat: no-repeat;
@@ -40,26 +49,45 @@
 
 .nav-bar {
     display: inline-flex;
-    margin-left: 700px;
+    margin-left: 500px;
     text-align: center;
+    cursor: pointer;
+    
 }
 
 
 .nav-bar li {
     text-decoration: none;
     list-style-type: none;
-    padding-right: 30px;
+    padding: 30px 60px 0px 0px;
     font-size: 1.2em;
     
 }
 
 .nav-bar li a {
     text-decoration: none;
+    color: #333;
 }
 
-.intro {
-    text-align: justify;
-    margin-left: 190px;
+.nav-bar li a:hover {
+   color: #6E48E0;
+}
+
+.dark_light_mode {
+   padding: 30px 0px 0px 0px;
+   
+}
+
+.about-me {
+   background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)), url(https://img.freepik.com/premium-photo/kaleidospe-3d-shapes-background_719536-1368.jpg?w=740);
+    height: 100%;
+    width: 100%;
+    padding: 250px 0px 50px 190px;
+   
+}
+
+#about {
+    text-align: center;
     font-size: 1.1em;
     letter-spacing: 1.5px;
     width: 900px;
@@ -67,18 +95,15 @@
     
 }
 
-.intro h1{
-         font-size: 2.2em;
+#about h1{
+         font-size: 3rem;
          animation: name 2s linear 0s infinite alternate-reverse none running;
-         margin-left: -15px;
-         margin-top: 40px;
          letter-spacing: 9px;
          text-rendering: geometricPrecision;     
          
      }
 
-     .intro h1 {
-         margin-top: 78px;
+     #about h1 {
          padding: 20px;
      }
 
@@ -93,14 +118,22 @@
         padding: 40px 0 0 0;
      }
 
+     .socials {
+      position: absolute;
+      color: #6E48E0;
+      top: 50%;
+      right: 95%;
+      font-size: 2rem;
+     }
+
      .socials  ul{
         padding: 40px 0 0 0;
-        display: flex;
+        display: block;
         list-style-type: none;
      }
 
      .socials ul li {
-        padding: 0px 30px 0px 0px;
+        padding: 10px 30px 0px 0px;
      }
 
      .tools {
