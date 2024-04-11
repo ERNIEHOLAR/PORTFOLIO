@@ -144,14 +144,14 @@
      .socials {
       position: absolute;
       color: #6E48E0;
-      top: 45%;
+      top: 68%;
       right: 95%;
       background-color: #fff;
-      font-size: 2rem;
+      font-size: 1.5rem;
      }
 
      .socials  ul{
-        padding: 0px 0 30px 0px;
+        padding: 0px 0 20px 0px;
         display: block;
         list-style-type: none;
      }
@@ -391,7 +391,7 @@
 
      .footer-socials ul li {
         padding: 0px 30px 0px 0px;
-        font-size: 2.3rem;
+        font-size: 1.9rem;
      }
      
      hr {
@@ -407,6 +407,14 @@
      /* MEDIA QUERIES STARTED */
 
      @media screen and (max-width: 1480px) {
+
+      .hero-text {
+         margin-left: -14%;
+      }
+
+      video {
+         margin-left: 10%;
+      }
       p, li, a, form label {
           font-size: larger;
        }
@@ -422,7 +430,7 @@
       }
  
       .footer-socials {
-         margin-left: 500px;
+         margin-left: 300px;
    }
 
 }
@@ -431,6 +439,10 @@
 @media screen and (max-width: 1300px) {
    .hero {
        width: auto;
+    }
+
+    .hero-text {
+      margin-left: -50px;
     }
 
     .socials {
