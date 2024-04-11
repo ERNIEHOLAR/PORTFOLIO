@@ -79,10 +79,38 @@
    color: #6E48E0;
 }
 
-.dark_light_mode {
-   padding: 30px 0px 0px 0px;
-   
+/* dark and light theme */
+[data-theme="light"] {
+   --color-bg: #ffffff;
+   --color-fg: #000000;
 }
+
+[data-theme="dark"] {
+   --color-bg: #000000;
+   --color-fg: #ffffff;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+}
+
+button {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 1.5rem 0.7rem;
+  transition: all var(--global-transition-time) ease-in-out;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-fg);
+  background-color: var(--color-bg);
+  border: 0.25rem solid var(--color-fg);
+}
+
+/* dark and light theme ends */
 
 .hero {
    background: linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)), url(https://img.freepik.com/premium-photo/kaleidospe-3d-shapes-background_719536-1368.jpg?w=740);
@@ -213,6 +241,7 @@
 
      .tools-container {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         padding: 2 0px;
         display: flex;
@@ -387,11 +416,16 @@
     .footer-socials  ul{
         display: flex;
         list-style-type: none;
+
      }
 
      .footer-socials ul li {
-        padding: 0px 30px 0px 0px;
+        padding: 0px 50px 0px 0px;
         font-size: 1.9rem;
+     }
+
+     footer  .fa-phone {
+      color: #fff;
      }
      
      hr {
@@ -432,6 +466,7 @@
       .footer-socials {
          margin-left: 300px;
    }
+   
 
 }
 
@@ -442,7 +477,7 @@
     }
 
     .hero-text {
-      margin-left: -50px;
+      margin-left: -170px;
     }
 
     .socials {
@@ -462,6 +497,11 @@
  
    }
 
+   @media screen and (max-width: 1124px) {
+      .footer-section {
+      }
+   }
+
    @media screen and (max-width: 1200px) {
 
       .hero-text {
@@ -477,14 +517,16 @@
       }
    
 
-
-
      @media screen and (max-width: 1100px) {
       .project-one, .project-two, .project-three,
       .project-four, .project-five {
          display: flex;
          flex-wrap: wrap;
          justify-content: center;
+      }
+
+      video {
+         margin-left: -12px;
       }
 
       .text {
@@ -495,10 +537,23 @@
       }
 
       .text h2, .view {
-         margin-left: -13%;
+         margin-left: -17%;
       }
 
       .contact {
          padding: 40px;
+         margin-top: 20px;
+      }
+   }
+
+   @media screen and (max-width: 1100px) {
+      .socials {
+         display: none;
+      }
+   }
+
+   @media screen and (max-width: 800px) {
+      .hero-text{
+         width: auto;
       }
    }
