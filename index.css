@@ -53,11 +53,16 @@
     height: 600px;
 }
 
+.nav-conrainer {
+   z-index: 1;
+}
+
 .nav-bar {
     display: inline-flex;
     margin-left: 400px;
     text-align: center;
     cursor: pointer;
+    z-index: 1;
     
 }
 
@@ -79,20 +84,119 @@
    color: #6E48E0;
 }
 
-/* dark and light theme */
-[data-theme="light"] {
-   --color-bg: #ffffff;
-   --color-fg: #000000;
+
+/* hamburger*/
+
+.header .menu-icon {
+   cursor: pointer;
+   display: inline-block;
+   float: right;
+   padding: 28px 20px;
+   position: relative;
+   user-select: none;
+ }
+ 
+ .header .menu-icon .navicon {
+   background: #333;
+   display: block;
+   height: 2px;
+   position: relative;
+   transition: background .2s ease-out;
+   width: 18px;
+ }
+ 
+ .header .menu-icon .navicon:before,
+ .header .menu-icon .navicon:after {
+   background: #333;
+   content: '';
+   display: block;
+   height: 100%;
+   position: absolute;
+   transition: all .2s ease-out;
+   width: 100%;
+ }
+ 
+ .header .menu-icon .navicon:before {
+   top: 5px;
+ }
+ 
+ .header .menu-icon .navicon:after {
+   top: -5px;
+ }
+ 
+ /* menu btn */
+ 
+ .header .menu-btn {
+   display: none;
+ }
+ 
+ .header .menu-btn:checked ~ .menu {
+   max-height: 240px;
+ }
+ 
+ .header .menu-btn:checked ~ .menu-icon .navicon {
+   background: transparent;
+ }
+ 
+ .header .menu-btn:checked ~ .menu-icon .navicon:before {
+   transform: rotate(-45deg);
+ }
+ 
+ .header .menu-btn:checked ~ .menu-icon .navicon:after {
+   transform: rotate(45deg);
+ }
+ 
+ .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+ .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+   top: 0;
+ }
+/*
+.hamburger {
+   position: relative;
+   display: block;
+   width: 35px;
+   height: 35px;
+   cursor: pointer;
+   appearance: none;
+   background: none;
+   outline: none;
+   border: none;
+
 }
 
-[data-theme="dark"] {
-   --color-bg: #000000;
-   --color-fg: #ffffff;
+.hamburger .bar, .hamburger:after, .hamburger:before {
+   content: "";
+   display: block;
+   width: 100%;
+   height: 5px;
+   background-color: #fff;
+   color: #000;
+   margin: 6px 0px;
+   transition: 0.4s;
 }
+
+.hamburger.is-active:before {
+   transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.hamburger.is-active:after {
+   transform: rotate(-45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+
+}
+
+/* dark and light theme 
+.dark-theme {
+   background-color: #000106;
+   color: #fff;
+}
+*/
 
 body {
-  background-color: var(--color-bg);
-  color: var(--color-fg);
+  background-color: #fff;
+  color: #000;
   display: grid;
   min-height: 100vh;
   place-items: center;
@@ -143,12 +247,18 @@ button {
          padding: 40px;
      }
 
+     /*
+
      @keyframes name {
          10% {
              text-shadow: rgb(255, 105, 180) 3px 0px;
          }
+         20% {
+            text-shadow: rgb(110,72,224) 3px 0px;
+         }
         
      }
+*/
 
    #hero-about p{
       line-height: 30px;
@@ -172,16 +282,18 @@ button {
      .socials {
       position: absolute;
       color: #6E48E0;
-      top: 68%;
+      top: 50%;
       right: 95%;
       background-color: #fff;
       font-size: 1.5rem;
+      
      }
 
      .socials  ul{
         padding: 0px 0 20px 0px;
         display: block;
         list-style-type: none;
+        
      }
 
      .socials ul li {
@@ -277,7 +389,7 @@ button {
         grid-template-columns: 1fr 3fr;
         min-height: 500px;
         width: 100%;
-        margin-top: -40px;
+        margin-top: -70px;
      }
 
 
@@ -381,6 +493,10 @@ button {
     color: white;
     }
 
+    footer {
+      width: 100%;
+    }
+
     .footer-section {
         display: flex;
         flex-wrap: wrap;
@@ -440,6 +556,7 @@ button {
 
      /* MEDIA QUERIES STARTED */
 
+
      @media screen and (max-width: 1480px) {
 
       .hero-text {
@@ -497,9 +614,25 @@ button {
  
    }
 
-   @media screen and (max-width: 1124px) {
+   @media screen and (max-width: 1117px) {
       .footer-section {
+         margin: auto;
+         display: block;
+         text-align: center;
+         justify-content: center;
+         padding: 0px 0px 0px 0px;
       }
+
+      .footer-socials {
+         margin-left: -20px;
+      }
+
+      .footer-socials ul {
+         margin-left: 220px;
+      }
+
+       
+      
    }
 
    @media screen and (max-width: 1200px) {
@@ -556,4 +689,25 @@ button {
       .hero-text{
          width: auto;
       }
+
+      .nav-bar {
+         display: none;
+      }
    }
+
+   @media  screen and (min-width:768px) {
+      .header li {
+         float: left;
+       }
+       
+       .header .menu {
+         clear: none;
+         float: right;
+         max-height: none;
+       }
+       .header .menu-icon {
+         display: none;
+       }
+     }
+     
+   
